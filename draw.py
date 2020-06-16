@@ -73,9 +73,6 @@ def proof(dataset, n, onlyWins=False):
         print("Total wins:",f"{num:,}")
     print(dataset)
 
-
-if __name__ == '__main__':
-    main()
 # generates pool of winners
 participants = makePool(Names(500000), max=5000)
 winners = proof(participants, 21, onlyWins=True)
