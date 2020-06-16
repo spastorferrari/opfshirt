@@ -80,33 +80,33 @@ winners = proof(participants, 21, onlyWins=True)
 # prints the winners with their respective odds
 for i in range(0,21):
     print(participants[participants.values == winners[i]],'\n')
-
-def simulation(numSims = 10):
-    avgSims = set()
-    opfS = dict()
-
-    while len(avgSims) is not numSims:
-        participants = makePool(Names())
-        winners = proof(participants, 21, onlyWins=True)
-
-        a = set(opfS)
-        b = set(winners)
-
-        count = 0
-        while bool((set(a).intersection(set(b)))) is False:
-            participants = makePool(Names())
-            winners = proof(participants, 21, onlyWins=True)
-            count +=1
-        if bool((set(a).intersection(set(b)))) is True:
-            avgSims.add(count)
-            opfS[str(set(a).intersection(b))]=count
-            count=0
-        return(opfS,avgSims)
-
-simulation(2)
-len(avgSims)
-sum(avgSims)/len(avgSims)
-
-
-len(avgSims)
+#
+# def simulation(numSims = 10):
+#     avgSims = set()
+#     opfS = dict()
+#
+#     while len(avgSims) is not numSims:
+#         participants = makePool(Names())
+#         winners = proof(participants, 21, onlyWins=True)
+#
+#         a = set(opfS)
+#         b = set(winners)
+#
+#         count = 0
+#         while bool((set(a).intersection(set(b)))) is False:
+#             participants = makePool(Names())
+#             winners = proof(participants, 21, onlyWins=True)
+#             count +=1
+#         if bool((set(a).intersection(set(b)))) is True:
+#             avgSims.add(count)
+#             opfS[str(set(a).intersection(b))]=count
+#             count=0
+#         return(opfS,avgSims)
+#
+# simulation(2)
+# len(avgSims)
+# sum(avgSims)/len(avgSims)
+#
+#
+# len(avgSims)
 # Sebastián Pastor Ferrari 2020 ©
