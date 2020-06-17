@@ -74,7 +74,7 @@ def proof(dataset, n, onlyWins=False):
     print(dataset)
 
 # generates pool of winners
-participants = makePool(Names(500000), max=5000)
+participants = makePool(Names(3000), max=100)
 winners = proof(participants, 21, onlyWins=True)
 
 # prints the winners with their respective odds
