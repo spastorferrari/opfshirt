@@ -1,7 +1,6 @@
-def main():
-    import pandas as pd
-    import random as rdm
-    import numpy as np
+import pandas as pd
+import random as rdm
+import numpy as np
 
 def makePool(namesList, trueBids=None,min=0, max=100):
     """
