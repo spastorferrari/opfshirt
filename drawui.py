@@ -5,6 +5,8 @@ import pandas as pd
 import random as rdm
 import numpy as np
 
+import os
+os.getcwd()
 FILE_NAME_HERE = 'sorteo_TEST.csv'
 
 
@@ -98,25 +100,21 @@ def phrase_display():
 window = tk.Tk()
 window.title("Operación Frijol - #JuguemosPorHonduras")
 window.geometry("500x500")
+# ------------------------------------------------------------- BACKGROUND IMAGE
 bgImage = PhotoImage(file="background.gif")
 Label(window,image=bgImage).place(relwidth=1,relheight=1)
-
 # ------------------------------------------------------------------------ LABEL
 title = tk.Label(
     text="SORTEO 1: #JuguemosPorHonduras Operación Frijol",
     font=(10))
 
 title.grid(column=1,row=4)
-
-
 # ---------------------------------------------------------------------- BUTTONS
 button1 = tk.Button(text="iSortear!",bg='violet', command=phrase_display)
 button1.grid(column=1,row=1)
-
 # ------------------------------------------------------------------ ENTRY FIELD
 # entry1 = tk.Entry()
 # entry1.grid(column=1,row=1)
-
 # ------------------------------------------------------------------ RUN PROGRAM
 window.mainloop() # runs the gui
 
