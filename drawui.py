@@ -7,7 +7,7 @@ import numpy as np
 
 import os
 os.getcwd()
-FILE_NAME_HERE = 'sorteo_TEST.csv'
+FILE_NAME_HERE = 'donations_real01.csv'
 
 
 # -------------------------------------------------------------------- FUNCTIONS
@@ -119,7 +119,7 @@ button1.grid(column=1,row=1)
 window.mainloop() # runs the gui
 
 
-# df1 = pd.read_csv('sorteo_TEST.csv')
+# df1 = pd.read_csv('donations_real01.csv')
 # df1['bids'] = [int(amount/50) for amount in df1['amount']]
 # pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
 # proof(pl2, 3, onlyWins=False)
