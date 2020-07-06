@@ -2,8 +2,6 @@
 ## sebastian pastor ferrari 2020 © - for reference only
 ###### "When Alexander saw the breadth of his domain... He wept, for there was no more world left to conquer."
 
-
-
 ## Simulation 01:
 ##### Simulación Sorteo Boniek, Rochez, Costly.
 
