@@ -112,20 +112,14 @@ title.grid(column=1,row=4)
 # ---------------------------------------------------------------------- BUTTONS
 button1 = tk.Button(text="iSortear!",bg='violet', command=phrase_display)
 button1.grid(column=1,row=1)
-# ------------------------------------------------------------------ ENTRY FIELD
-# entry1 = tk.Entry()
-# entry1.grid(column=1,row=1)
 # ------------------------------------------------------------------ RUN PROGRAM
 window.mainloop() # runs the gui
-
-pd.set_option("display.max_rows", None, "display.max_columns", None)
-df1 = pd.read_csv('donations_real02.csv')
-df1['bids'] = [int(amount/50) for amount in df1['amount']]
-pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
-proof(pl2, 4, onlyWins=False)
-
-dataset
-
-# players = makePool(Names(3, opf=True),max=100)
-# winners = proof(players,3,onlyWins=False)
-# winners
+# ----------------------------------------------------------- SIMULATION RESULTS
+# def markdown_creator(filename, numwinners=0):
+#     pd.set_option("display.max_rows", None, "display.max_columns", None)
+#     df1 = pd.read_csv(filename)
+#     df1['bids'] = [int(amount/50) for amount in df1['amount']]
+#     pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
+#     print(proof(pl2, numwinners, onlyWins=False).to_markdown())
+#
+# markdown_creator('donations_real02.csv',2)
