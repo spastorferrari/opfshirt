@@ -7,7 +7,7 @@ import numpy as np
 
 import os
 os.getcwd()
-FILE_NAME_HERE = 'donations_real01.csv'
+FILE_NAME_HERE = 'donations_real02.csv'
 
 
 # -------------------------------------------------------------------- FUNCTIONS
@@ -69,9 +69,9 @@ def proof(dataset, n, onlyWins=False):
     players=dataset['names']
 
     if onlyWins:
-        return (rdm.choices(players, p, k=n))
+        return rdm.choices(players, weights=p, k=n)
     else:
-        lst = rdm.choices(players, p, k=n)
+        lst = rdm.choices(players, weights=p, k=n)
 
         for player in players:
             num = lst.count(player)
@@ -79,14 +79,14 @@ def proof(dataset, n, onlyWins=False):
 
         num = len(lst)
         print("Total wins:",f"{num:,}")
-    print(dataset)
+    return(dataset)
 
 def phrase_display():
     # Winners of draw
     df_real = pd.read_csv(FILE_NAME_HERE)
     df_real['bids'] = [int(amount/50) for amount in df_real['amount']]
     players = makePool(df_real['names'],trueBids=list(df_real['bids']))
-    winners = proof(players,3,onlyWins=True)
+    winners = proof(players,1,onlyWins=True)
 
     # Text field creator
     winners_display = tk.Text(master=window, height=10, width=60)
@@ -105,7 +105,7 @@ bgImage = PhotoImage(file="background.gif")
 Label(window,image=bgImage).place(relwidth=1,relheight=1)
 # ------------------------------------------------------------------------ LABEL
 title = tk.Label(
-    text="SORTEO 1: #JuguemosPorHonduras Operación Frijol",
+    text="SORTEO 2: #JuguemosPorHonduras Operación Frijol",
     font=(10))
 
 title.grid(column=1,row=4)
@@ -118,12 +118,13 @@ button1.grid(column=1,row=1)
 # ------------------------------------------------------------------ RUN PROGRAM
 window.mainloop() # runs the gui
 
+pd.set_option("display.max_rows", None, "display.max_columns", None)
+df1 = pd.read_csv('donations_real02.csv')
+df1['bids'] = [int(amount/50) for amount in df1['amount']]
+pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
+proof(pl2, 4, onlyWins=False)
 
-# df1 = pd.read_csv('donations_real01.csv')
-# df1['bids'] = [int(amount/50) for amount in df1['amount']]
-# pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
-# proof(pl2, 3, onlyWins=False)
-
+dataset
 
 # players = makePool(Names(3, opf=True),max=100)
 # winners = proof(players,3,onlyWins=False)
