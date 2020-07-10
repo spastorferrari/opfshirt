@@ -7,7 +7,7 @@ import numpy as np
 
 import os
 os.getcwd()
-FILE_NAME_HERE = 'donations_real02.csv'
+FILE_NAME_HERE = 'donations_real03.csv'
 
 
 # -------------------------------------------------------------------- FUNCTIONS
@@ -83,10 +83,12 @@ def proof(dataset, n, onlyWins=False):
 
 def phrase_display():
     # Winners of draw
+    number_of_winners = 1
+
     df_real = pd.read_csv(FILE_NAME_HERE)
     df_real['bids'] = [int(amount/50) for amount in df_real['amount']]
     players = makePool(df_real['names'],trueBids=list(df_real['bids']))
-    winners = proof(players,1,onlyWins=True)
+    winners = proof(players,number_of_winners,onlyWins=True)
 
     # Text field creator
     winners_display = tk.Text(master=window, height=10, width=60)
@@ -105,7 +107,7 @@ bgImage = PhotoImage(file="background.gif")
 Label(window,image=bgImage).place(relwidth=1,relheight=1)
 # ------------------------------------------------------------------------ LABEL
 title = tk.Label(
-    text="SORTEO 2: #JuguemosPorHonduras Operación Frijol",
+    text="SORTEO 3: #JuguemosPorHonduras Operación Frijol",
     font=(10))
 
 title.grid(column=1,row=4)
@@ -122,4 +124,4 @@ window.mainloop() # runs the gui
 #     pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
 #     print(proof(pl2, numwinners, onlyWins=False).to_markdown())
 #
-# markdown_creator('donations_real02.csv',2)
+# markdown_creator(FILE_NAME_HERE,0)
