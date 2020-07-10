@@ -29,6 +29,6 @@ Camisa Benguché | @jcjf1993 | 1.95312% probabilidad
 
 |        Camisa | Ganador | % Probabilidad |
 | -------------:|:------- | --------------:|
-|  Camisa Amado | -       | -              |
-| Camisa Emilio | -       | -              |
-| Camisa Muma | -         | -              |
+|  Camisa Amado | @amlorenzana      | 2.59516% probabilidad
+| Camisa Emilio | @patvallecillo       | 0.865052% probabilidad
+| Camisa Muma | @vpg_Honduras         | 2.59516% probabilidad
