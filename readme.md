@@ -32,3 +32,14 @@ Camisa Benguché | @jcjf1993 | 1.95312% probabilidad
 |  Camisa Amado | @amlorenzana      | 2.59516% probabilidad
 | Camisa Emilio | @patvallecillo       | 0.865052% probabilidad
 | Camisa Muma | @vpg_Honduras         | 2.59516% probabilidad
+
+## Simulation 04:
+##### Simulación Sorteo Choco Lozano, Maynor Figuroa, Romell Quioto, Buba López
+###### Martes 14.07.2020
+
+| Camisa        | Ganador | % Probabilidad |
+| ------------- | ------- | -------------- |
+| Camisa  Choco | -       | -              |
+| Camisa Maynor | -       | -              |
+| Camisa Quioto | -       | -              |
+| Camisa Buba   | -       | -              |
