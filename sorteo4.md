@@ -128,7 +128,7 @@
 * spastorferrari : 0 wins.
 * mcabal68 : 0 wins.
 * ivilledamaduro : 0 wins.
-* Total wins: 3
+* Total wins: 4
 
 |     | names                      |   bids |    pts |        pval |      %Win |
 |----:|:---------------------------|-------:|-------:|------------:|----------:|
