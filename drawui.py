@@ -7,7 +7,7 @@ import numpy as np
 
 import os
 os.getcwd()
-FILE_NAME_HERE = 'donations_real03.csv'
+FILE_NAME_HERE = 'donations_real04.csv'
 
 
 # -------------------------------------------------------------------- FUNCTIONS
@@ -103,11 +103,15 @@ window = tk.Tk()
 window.title("Operación Frijol - #JuguemosPorHonduras")
 window.geometry("500x500")
 # ------------------------------------------------------------- BACKGROUND IMAGE
-bgImage = PhotoImage(file="background.gif")
-Label(window,image=bgImage).place(relwidth=1,relheight=1)
+# bgImage = PhotoImage(file="background.gif")
+# Label(window,image=bgImage).place(relwidth=1,relheight=1)
+filename = PhotoImage(file = "sorteo04.png")
+background_label = Label(window, image=filename)
+background_label.place(x=0, y=0, relwidth=1, relheight=1)
+
 # ------------------------------------------------------------------------ LABEL
 title = tk.Label(
-    text="SORTEO 3: #JuguemosPorHonduras Operación Frijol",
+    text="SORTEO 4: #JuguemosPorHonduras Operación Frijol",
     font=(10))
 
 title.grid(column=1,row=4)

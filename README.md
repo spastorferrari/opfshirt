@@ -39,7 +39,7 @@ Camisa Benguché | @jcjf1993 | 1.95312% probabilidad
 
 | Camisa        | Ganador | % Probabilidad |
 | ------------- | ------- | -------------- |
-| Camisa  Choco | -       | -              |
-| Camisa Maynor | -       | -              |
-| Camisa Quioto | -       | -              |
-| Camisa Buba   | -       | -              |
+| Camisa  Choco | @anag_reyes       | 1.457321% [probabilidad acumulada]|
+| Camisa Maynor | @carlosbendeck      | 0.832755% probabilidad|
+| Camisa Quioto | @allansikaffy       | 13.1853% [probabilidad acumulada]|
+| Camisa Buba   | @diegoabenitez       | 0.208189% probabilidad|
