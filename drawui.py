@@ -7,7 +7,7 @@ import numpy as np
 
 import os
 os.getcwd()
-FILE_NAME_HERE = 'donations_real04.csv'
+FILE_NAME_HERE = 'donations_real05.csv'
 
 
 # -------------------------------------------------------------------- FUNCTIONS
@@ -105,13 +105,13 @@ window.geometry("500x500")
 # ------------------------------------------------------------- BACKGROUND IMAGE
 # bgImage = PhotoImage(file="background.gif")
 # Label(window,image=bgImage).place(relwidth=1,relheight=1)
-filename = PhotoImage(file = "sorteo04.png")
+filename = PhotoImage(file = "background.gif")
 background_label = Label(window, image=filename)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 # ------------------------------------------------------------------------ LABEL
 title = tk.Label(
-    text="SORTEO 4: #JuguemosPorHonduras Operación Frijol",
+    text="SORTEO 5: #JuguemosPorHonduras Operación Frijol",
     font=(10))
 
 title.grid(column=1,row=4)
@@ -120,12 +120,13 @@ button1 = tk.Button(text="iSortear!",bg='violet', command=phrase_display)
 button1.grid(column=1,row=1)
 # ------------------------------------------------------------------ RUN PROGRAM
 window.mainloop() # runs the gui
+
+
 # ----------------------------------------------------------- SIMULATION RESULTS
-# def markdown_creator(filename, numwinners=0):
-#     pd.set_option("display.max_rows", None, "display.max_columns", None)
-#     df1 = pd.read_csv(filename)
-#     df1['bids'] = [int(amount/50) for amount in df1['amount']]
-#     pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
-#     print(proof(pl2, numwinners, onlyWins=False).to_markdown())
-#
+def markdown_creator(filename, numwinners=0):
+    pd.set_option("display.max_rows", None, "display.max_columns", None)
+    df1 = pd.read_csv(filename)
+    df1['bids'] = [int(amount/50) for amount in df1['amount']]
+    pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
+    print(proof(pl2, numwinners, onlyWins=False).to_markdown())
 # markdown_creator(FILE_NAME_HERE,0)
