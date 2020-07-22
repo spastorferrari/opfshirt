@@ -44,7 +44,6 @@ Camisa Benguché  | @jcjf1993 | 1.95312% probabilidad|
 | Camisa Buba    | @allansikaffy  | 13.1853% [probabilidad acumulada]  |
 | Camisa Maynor  | @diegoabenitez | 0.208189% probabilidad             |
 
-
 ## Simulation 05:
 ##### Simulación Sorteo Roger Espinoza, Hendry Thomas, Jerry Palacios, Wilson Palacios
 ###### Domingo 19.07.2020
@@ -55,3 +54,15 @@ Camisa Benguché  | @jcjf1993 | 1.95312% probabilidad|
 | Camisa Thomas | @allansikaffy | 16.0044% [probabilidad acumulada]  |
 | Camisa Jerry  | @hramos96     | 17.66005% [probabilidad acumulada] |
 | Camisa Wilson | @aryenriqueavila|0.551876% probabilidad            |
+
+## Simulation 06 - Última Jugada:
+##### Simulación Sorteo David Suazo, Edgar Álvarez, Julio César de León, Douglas Martinez, Jonathan Rubio
+###### Domingo 26.07.2020
+
+| Camisa         | Ganador | % Probabilidad |
+| -------------- | ------- | -------------- |
+| Camisa David   | -       | -              |
+| Camisa Edgar   | -       | -              |
+| Camisa Rambo   | -       | -              |
+| Camisa Douglas | -       | -              |
+| Camisa Rubio   | -       | -               |
