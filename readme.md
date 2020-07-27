@@ -18,10 +18,11 @@ Camisa Costly | @gasparvc | 2.29885% probabilidad |
 
 | Camisa | Ganador | % Probabilidad    |
 | ------ | ------- | :-------------- : |
-Camisa Alex López | @cristiankafie | 1.30208% probabilidad |
-Camisa Elis | @jcarquitectoshn | 18.099% probabilidad|
-Camisa Beckeles | @nicolasquinonesk | 3.90625% probabilidad|
-Camisa Benguché  | @jcjf1993 | 1.95312% probabilidad|
+|Camisa Alex López | @cristiankafie | 1.30208% probabilidad |
+|Camisa Elis | @jcarquitectoshn | 18.099% probabilidad|
+|Camisa Beckeles | @nicolasquinonesk | 3.90625% probabilidad|
+|Camisa Benguché  | @jcjf1993 | 1.95312% probabilidad|
+
 
 ## Simulation 03:
 ##### Simulación Sorteo Amado Guevara, Emilio Izaguirre, Muma Bernárdez
@@ -59,10 +60,8 @@ Camisa Benguché  | @jcjf1993 | 1.95312% probabilidad|
 ##### Simulación Sorteo David Suazo, Edgar Álvarez, Julio César de León, Douglas Martinez, Jonathan Rubio
 ###### Domingo 26.07.2020
 
-| Camisa         | Ganador | % Probabilidad |
-| -------------- | ------- | -------------- |
-| Camisa David   | -       | -              |
-| Camisa Edgar   | -       | -              |
-| Camisa Rambo   | -       | -              |
-| Camisa Douglas | -       | -              |
-| Camisa Rubio   | -       | -               |
+| Camisa         | Ganador        | % Probabilidad        |
+| -------------- | -------------- | --------------------- |
+| Camisa David   | @juanavelar17  | 7.4363% probabilidad  |
+| Camisa Rubio   | @l0co00        | 3.25013% probabilidad |
+| Camisa Douglas | @carlosfacusse | 0.650026% probabilidad|

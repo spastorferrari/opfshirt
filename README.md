@@ -18,10 +18,11 @@ Camisa Costly | @gasparvc | 2.29885% probabilidad |
 
 | Camisa | Ganador | % Probabilidad    |
 | ------ | ------- | :-------------- : |
-Camisa Alex López | @cristiankafie | 1.30208% probabilidad |
-Camisa Elis | @jcarquitectoshn | 18.099% probabilidad|
-Camisa Beckeles | @nicolasquinonesk | 3.90625% probabilidad|
-Camisa Benguché  | @jcjf1993 | 1.95312% probabilidad|
+|Camisa Alex López | @cristiankafie | 1.30208% probabilidad |
+|Camisa Elis | @jcarquitectoshn | 18.099% probabilidad|
+|Camisa Beckeles | @nicolasquinonesk | 3.90625% probabilidad|
+|Camisa Benguché  | @jcjf1993 | 1.95312% probabilidad|
+
 
 ## Simulation 03:
 ##### Simulación Sorteo Amado Guevara, Emilio Izaguirre, Muma Bernárdez

@@ -1,14 +1,14 @@
-# import dependencies
+# ---------------------------------------------------------- import dependencies
 import tkinter as tk
 from tkinter import *
 import pandas as pd
 import random as rdm
 import numpy as np
-
+# ---------------------------------------------------------------------- set wd
 import os
 os.getcwd()
-FILE_NAME_HERE = 'donations_real05.csv'
-
+os.chdir('C:\\Users\\Sebastian Pasotr\\documents\\Data_Coding\\opfshirt')
+FILE_NAME_HERE = 'donations_real06.csv'
 
 # -------------------------------------------------------------------- FUNCTIONS
 def makePool(namesList, trueBids=None,min=0, max=100):
@@ -64,17 +64,19 @@ def proof(dataset, n, onlyWins=False):
         print(participants[participants.values == winners[i]])
     """
     lst=set()
+    dataset['win_frequency'] = 0
     p=dataset['pval']
     n=n
     players=dataset['names']
+
 
     if onlyWins:
         return rdm.choices(players, weights=p, k=n)
     else:
         lst = rdm.choices(players, weights=p, k=n)
-
         for player in players:
             num = lst.count(player)
+            dataset['win_frequency'].loc[dataset['names'] == player] = num
             print(player,":" ,f"{num:,}", 'wins.')
 
         num = len(lst)
@@ -88,6 +90,9 @@ def phrase_display():
     df_real = pd.read_csv(FILE_NAME_HERE)
     df_real['bids'] = [int(amount/50) for amount in df_real['amount']]
     players = makePool(df_real['names'],trueBids=list(df_real['bids']))
+    players['names'] = players['names'].str.upper()
+    players = players.groupby(['names']).sum()
+    players = players.reset_index()
     winners = proof(players,number_of_winners,onlyWins=True)
 
     # Text field creator
@@ -103,15 +108,13 @@ window = tk.Tk()
 window.title("Operación Frijol - #JuguemosPorHonduras")
 window.geometry("500x500")
 # ------------------------------------------------------------- BACKGROUND IMAGE
-# bgImage = PhotoImage(file="background.gif")
-# Label(window,image=bgImage).place(relwidth=1,relheight=1)
-filename = PhotoImage(file = "background.gif")
+filename = PhotoImage(file = "sorteo06.png")
 background_label = Label(window, image=filename)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 # ------------------------------------------------------------------------ LABEL
 title = tk.Label(
-    text="SORTEO 5: #JuguemosPorHonduras Operación Frijol",
+    text="SORTEO 6: #JuguemosPorHonduras Operación Frijol",
     font=(10))
 
 title.grid(column=1,row=4)
@@ -121,12 +124,18 @@ button1.grid(column=1,row=1)
 # ------------------------------------------------------------------ RUN PROGRAM
 window.mainloop() # runs the gui
 
-
 # ----------------------------------------------------------- SIMULATION RESULTS
 def markdown_creator(filename, numwinners=0):
     pd.set_option("display.max_rows", None, "display.max_columns", None)
     df1 = pd.read_csv(filename)
     df1['bids'] = [int(amount/50) for amount in df1['amount']]
     pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
-    print(proof(pl2, numwinners, onlyWins=False).to_markdown())
-markdown_creator(FILE_NAME_HERE,0)
+    pl2['names'] = pl2['names'].str.upper()
+    pl2 = pl2.groupby(['names']).sum()
+    pl2 = pl2.reset_index()
+
+    # for i in range(900000,1000001):
+    #     print("Simulation: ", i,(proof(pl2, numwinners, onlyWins=True))[0])
+
+    print(proof(pl2, numwinners, onlyWins=False).to_markdown()) 
+markdown_creator(FILE_NAME_HERE,1)
