@@ -60,10 +60,8 @@ Camisa Costly | @gasparvc | 2.29885% probabilidad |
 ##### Simulación Sorteo David Suazo, Edgar Álvarez, Julio César de León, Douglas Martinez, Jonathan Rubio
 ###### Domingo 26.07.2020
 
-| Camisa         | Ganador | % Probabilidad |
-| -------------- | ------- | -------------- |
-| Camisa David   | -       | -              |
-| Camisa Edgar   | -       | -              |
-| Camisa Rambo   | -       | -              |
-| Camisa Douglas | -       | -              |
-| Camisa Rubio   | -       | -               |
+| Camisa         | Ganador        | % Probabilidad        |
+| -------------- | -------------- | --------------------- |
+| Camisa David   | @juanavelar17  | 7.4363% probabilidad  |
+| Camisa Rubio   | @l0co00        | 3.25013% probabilidad |
+| Camisa Douglas | @carlosfacusse | 0.650026% probabilidad|
