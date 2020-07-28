@@ -5,10 +5,7 @@ import pandas as pd
 import random as rdm
 import numpy as np
 # ---------------------------------------------------------------------- set wd
-import os
-os.getcwd()
-os.chdir('C:\\Users\\Sebastian Pasotr\\documents\\Data_Coding\\opfshirt')
-FILE_NAME_HERE = 'donations_real06.csv'
+FILE_NAME_HERE = "C:\Users\Sebastian Pasotr\Documents\Data_Coding\opfshirt\databases\donations_real06.csv"
 
 # -------------------------------------------------------------------- FUNCTIONS
 def makePool(namesList, trueBids=None,min=0, max=100):
@@ -69,14 +66,13 @@ def proof(dataset, n, onlyWins=False):
     n=n
     players=dataset['names']
 
-
     if onlyWins:
         return rdm.choices(players, weights=p, k=n)
     else:
         lst = rdm.choices(players, weights=p, k=n)
         for player in players:
             num = lst.count(player)
-            dataset['win_frequency'].loc[dataset['names'] == player] = num
+            # dataset['win_frequency'].loc[dataset['names'] == player] = num
             print(player,":" ,f"{num:,}", 'wins.')
 
         num = len(lst)
@@ -108,7 +104,7 @@ window = tk.Tk()
 window.title("Operación Frijol - #JuguemosPorHonduras")
 window.geometry("500x500")
 # ------------------------------------------------------------- BACKGROUND IMAGE
-filename = PhotoImage(file = "sorteo06.png")
+filename = PhotoImage(file = "C:\Users\Sebastian Pasotr\Documents\Data_Coding\opfshirt\images\sorteo06.png")
 background_label = Label(window, image=filename)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -137,5 +133,5 @@ def markdown_creator(filename, numwinners=0):
     # for i in range(900000,1000001):
     #     print("Simulation: ", i,(proof(pl2, numwinners, onlyWins=True))[0])
 
-    print(proof(pl2, numwinners, onlyWins=False).to_markdown()) 
+    print(proof(pl2, numwinners, onlyWins=False).to_markdown())
 markdown_creator(FILE_NAME_HERE,1)
