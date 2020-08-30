@@ -5,8 +5,7 @@ import pandas as pd
 import random as rdm
 import numpy as np
 # ---------------------------------------------------------------------- set wd
-FILE_NAME_HERE = "C:\Users\Sebastian Pasotr\Documents\Data_Coding\opfshirt\databases\donations_real06.csv"
-
+FILE_NAME_HERE = "C:\\Users\\Sebastian Pasotr\\Documents\\Data_Coding\\ga_desprendete\\databases\\desprendete.csv"
 # -------------------------------------------------------------------- FUNCTIONS
 def makePool(namesList, trueBids=None,min=0, max=100):
     """
@@ -36,24 +35,6 @@ def makePool(namesList, trueBids=None,min=0, max=100):
     participants['%Win']=[round(p*100,10) for p in participants['pval']]
 
     return participants
-def Names(numRandoms=4000, opf=False):
-    """
-    \n **Names() IS ONLY USED FOR TESTING**
-    \n\n numRandoms(default=4000): generates a random number of names for the purposes of introducing random players in game.\n\n opf(default=True): if opf is True, then the names of OPF Redes will be added to the players.
-    """
-    import names
-    additional_names = []
-    for i in range(0,numRandoms):
-        name = names.get_full_name()
-        additional_names.append(name)
-
-    if opf is True:
-        opf = ['Sebastian Pastor', 'Daniel Vijil', 'Hugo Caballero', 'Aldo Piaggio', 'Antonella Wing','Carlos Faccuse','Diego Lorenzana','Diana Mourra','Edison Martinez','Gaspar Vallecillo','Gustavo Raudales','Isabelle Villeda','Lissane Kafie','Alejandro Matamoros','Percy Lainez']
-
-        additional_names = additional_names+opf
-    else:
-        additional_names = additional_names
-    return additional_names
 def proof(dataset, n, onlyWins=False):
     """
     \ndataset: the DataFrame with respective ['names'] & ['pval'] columns used to generate the draw weighted by the corresponding probability for the number of tickets purchased per player. \n\n n:number of things to draw (for our purposes pass 21, since we are drawing 21 shirts). Can be adjusted per draw to 1,3,7, etc. \n\n onlyWins(default=False): if onlyWins is False, it will give you the entire dataframe with a boolean value per winner. if onlyWins is True, the function will return only the list of winners, the corresponding p-values can further be accessed through a for-loop: \n\n
@@ -78,13 +59,12 @@ def proof(dataset, n, onlyWins=False):
         num = len(lst)
         print("Total wins:",f"{num:,}")
     return(dataset)
-
 def phrase_display():
     # Winners of draw
     number_of_winners = 1
 
     df_real = pd.read_csv(FILE_NAME_HERE)
-    df_real['bids'] = [int(amount/50) for amount in df_real['amount']]
+    df_real['bids'] = [int(amount/1) for amount in df_real['amount']]
     players = makePool(df_real['names'],trueBids=list(df_real['bids']))
     players['names'] = players['names'].str.upper()
     players = players.groupby(['names']).sum()
@@ -98,40 +78,29 @@ def phrase_display():
     winners_display.insert(tk.END,winners)
 
     return winners
-
 # -------------------------------------------------------------------- CREATE UI
 window = tk.Tk()
-window.title("Operación Frijol - #JuguemosPorHonduras")
+window.title("Frijol Tech - The Givewaway Engine")
 window.geometry("500x500")
 # ------------------------------------------------------------- BACKGROUND IMAGE
-filename = PhotoImage(file = "C:\Users\Sebastian Pasotr\Documents\Data_Coding\opfshirt\images\sorteo06.png")
+filename = PhotoImage(file = "C:\\Users\\Sebastian Pasotr\\Documents\\Data_Coding\\ga_desprendete\\images\\desprendete.png")
 background_label = Label(window, image=filename)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
-
-# ------------------------------------------------------------------------ LABEL
-title = tk.Label(
-    text="SORTEO 6: #JuguemosPorHonduras Operación Frijol",
-    font=(10))
-
-title.grid(column=1,row=4)
 # ---------------------------------------------------------------------- BUTTONS
 button1 = tk.Button(text="iSortear!",bg='violet', command=phrase_display)
 button1.grid(column=1,row=1)
 # ------------------------------------------------------------------ RUN PROGRAM
 window.mainloop() # runs the gui
-
 # ----------------------------------------------------------- SIMULATION RESULTS
 def markdown_creator(filename, numwinners=0):
     pd.set_option("display.max_rows", None, "display.max_columns", None)
     df1 = pd.read_csv(filename)
-    df1['bids'] = [int(amount/50) for amount in df1['amount']]
+    df1['bids'] = [int(amount/1) for amount in df1['amount']]
     pl2 = makePool(df1['names'],trueBids=list(df1['bids']))
     pl2['names'] = pl2['names'].str.upper()
     pl2 = pl2.groupby(['names']).sum()
     pl2 = pl2.reset_index()
-
     # for i in range(900000,1000001):
     #     print("Simulation: ", i,(proof(pl2, numwinners, onlyWins=True))[0])
-
     print(proof(pl2, numwinners, onlyWins=False).to_markdown())
 markdown_creator(FILE_NAME_HERE,1)

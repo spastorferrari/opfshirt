@@ -1,66 +1,54 @@
-# Operación Frijol Simulation Results
+# Frijol Tech © : Sorteo Desprendete
 ## sebastian pastor ferrari 2020 © - for reference only
 ###### "When Alexander saw the breadth of his domain... He wept, for there was no more world left to conquer."
 
-## Simulation 01:
-##### Simulación Sorteo Boniek, Rochez, Costly.
-###### Viernes 26.06.2020
+![image](images/desprendete.png)
 
-| Camisa | Ganador | % Probabilidad |
-| ------:|:------- | --------------:|
-Camisa Boniek | @allansikaffy | 4.5977% probabilidad |
-Camisa Rochez | @jcarquitectoshn | 32.1839% probabilidad |
-Camisa Costly | @gasparvc | 2.29885% probabilidad |
 
-## Simulation 02:
-##### Simulación Sorteo Alex López, Elis, Beckeles, Benguché.
-###### Domingo 05.07.2020
-
-|            Camisa | Ganador           |        % Probabilidad |
-| -----------------:|:----------------- | ---------------------:|
-| Camisa Alex López | @cristiankafie    | 1.30208% probabilidad |
-|       Camisa Elis | @jcarquitectoshn  |  18.099% probabilidad |
-|   Camisa Beckeles | @nicolasquinonesk | 3.90625% probabilidad |
-|   Camisa Benguché | @jcjf1993         | 1.95312% probabilidad |
-
-## Simulation 03:
-##### Simulación Sorteo Amado Guevara, Emilio Izaguirre, Muma Bernárdez
-###### Jueves 09.07.2020
-
-|        Camisa | Ganador        |         % Probabilidad |
-| -------------:|:-------------- | ----------------------:|
-|  Camisa Amado | @amlorenzana   |  2.59516% probabilidad |
-| Camisa Emilio | @patvallecillo | 0.865052% probabilidad |
-|   Camisa Muma | @vpg_Honduras  |  2.59516% probabilidad |
-
-## Simulation 04:
-##### Simulación Sorteo Choco Lozano, Maynor Figuroa, Romell Quioto, Buba López
-###### Martes 14.07.2020
-
-| Camisa         | Ganador        | % Probabilidad                     |
-| -------------- | -------------- | ---------------------------------- |
-| Camisa  Quioto | @anag_reyes    | 1.457321% [probabilidad acumulada] |
-| Camisa Choco   | @carlosbendeck | 0.832755% probabilidad             |
-| Camisa Buba    | @allansikaffy  | 13.1853% [probabilidad acumulada]  |
-| Camisa Maynor  | @diegoabenitez | 0.208189% probabilidad             |
-
-## Simulation 05:
-##### Simulación Sorteo Roger Espinoza, Hendry Thomas, Jerry Palacios, Wilson Palacios
-###### Domingo 19.07.2020
-
-| Camisa        | Ganador       | % Probabilidad                     |
-| ------------- | ------------- | ---------------------------------- |
-| Camisa Roger  | @vpg_Honduras | 3.31126% [probabilidad acumulada]  |
-| Camisa Thomas | @allansikaffy | 16.0044% [probabilidad acumulada]  |
-| Camisa Jerry  | @hramos96     | 17.66005% [probabilidad acumulada] |
-| Camisa Wilson | @aryenriqueavila|0.551876% probabilidad            |
-
-## Simulation 06 - Última Jugada:
-##### Simulación Sorteo David Suazo, Edgar Álvarez, Julio César de León, Douglas Martinez, Jonathan Rubio
-###### Domingo 26.07.2020
-
-| Camisa         | Ganador        | % Probabilidad        |
-| -------------- | -------------- | --------------------- |
-| Camisa David   | @juanavelar17  | 7.4363% probabilidad  |
-| Camisa Rubio   | @l0co00        | 3.25013% probabilidad |
-| Camisa Douglas | @carlosfacusse | 0.650026% probabilidad|
+* ABIGAIL DUARTE : 1 wins.
+* ALEJANDRA DUARTE : 0 wins.
+* ALEJANDRO ROMERO : 0 wins.
+* ANA ZELAYA : 0 wins.
+* ANDREA GUILLEN : 0 wins.
+* ANDREA GUTIERREZ : 0 wins.
+* ANDREA WOO : 0 wins.
+* CLARA PINEDA  : 0 wins.
+* DANIELA FLORES : 0 wins.
+* ELENA REYES : 0 wins.
+* ISABELLA CANALES : 0 wins.
+* JAVIER DIAZ : 0 wins.
+* JOSE CARRANZA : 0 wins.
+* JOSE INTERIANO : 0 wins.
+* LAURA BUESO : 0 wins.
+* LISSEL SALAZAR : 0 wins.
+* MARIA MONTES : 0 wins.
+* MARIANA GARCIA  : 0 wins.
+* MILLENY RODRIGUEZ : 0 wins.
+* NATALIA SANDOVAL : 0 wins.
+* REYNALDO RODRIGUEZ : 0 wins.
+* TANIA HERNANDEZ : 0 wins.
+* Total wins: 1
+|    | names              |   bids |   pts |    pval |   %Win |   win_frequency |
+|---:|:-------------------|-------:|------:|--------:|-------:|----------------:|
+|  0 | ABIGAIL DUARTE     |     16 | 16000 | 0.1     | 10     |               1 |
+|  1 | ALEJANDRA DUARTE   |     16 | 16000 | 0.1     | 10     |               0 |
+|  2 | ALEJANDRO ROMERO   |      1 |  1000 | 0.00625 |  0.625 |               0 |
+|  3 | ANA ZELAYA         |      5 |  5000 | 0.03125 |  3.125 |               0 |
+|  4 | ANDREA GUILLEN     |     25 | 25000 | 0.15625 | 15.625 |               0 |
+|  5 | ANDREA GUTIERREZ   |      2 |  2000 | 0.0125  |  1.25  |               0 |
+|  6 | ANDREA WOO         |      4 |  4000 | 0.025   |  2.5   |               0 |
+|  7 | CLARA PINEDA       |      9 |  9000 | 0.05625 |  5.625 |               0 |
+|  8 | DANIELA FLORES     |      5 |  5000 | 0.03125 |  3.125 |               0 |
+|  9 | ELENA REYES        |     12 | 12000 | 0.075   |  7.5   |               0 |
+| 10 | ISABELLA CANALES   |     10 | 10000 | 0.0625  |  6.25  |               0 |
+| 11 | JAVIER DIAZ        |      4 |  4000 | 0.025   |  2.5   |               0 |
+| 12 | JOSE CARRANZA      |      4 |  4000 | 0.025   |  2.5   |               0 |
+| 13 | JOSE INTERIANO     |      4 |  4000 | 0.025   |  2.5   |               0 |
+| 14 | LAURA BUESO        |      4 |  4000 | 0.025   |  2.5   |               0 |
+| 15 | LISSEL SALAZAR     |     16 | 16000 | 0.1     | 10     |               0 |
+| 16 | MARIA MONTES       |      8 |  8000 | 0.05    |  5     |               0 |
+| 17 | MARIANA GARCIA     |      4 |  4000 | 0.025   |  2.5   |               0 |
+| 18 | MILLENY RODRIGUEZ  |      1 |  1000 | 0.00625 |  0.625 |               0 |
+| 19 | NATALIA SANDOVAL   |      2 |  2000 | 0.0125  |  1.25  |               0 |
+| 20 | REYNALDO RODRIGUEZ |      2 |  2000 | 0.0125  |  1.25  |               0 |
+| 21 | TANIA HERNANDEZ    |      6 |  6000 | 0.0375  |  3.75  |               0 |
